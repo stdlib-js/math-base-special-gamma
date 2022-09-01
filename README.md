@@ -54,30 +54,38 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-gamma
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var gamma = require( '@stdlib/math-base-special-gamma' );
+gamma = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var gamma = require( 'path/to/vendor/umd/math-base-special-gamma/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.gamma;
+})();
+</script>
 ```
 
 #### gamma( x )
@@ -117,9 +125,14 @@ v = gamma( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
-var gamma = require( '@stdlib/math-base-special-gamma' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var x = linspace( -10.0, 10.0, 100 );
 
@@ -127,6 +140,11 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, f(x): %d', x[ i ], gamma( x[ i ] ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -214,23 +232,23 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 
-[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial
+[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial/tree/umd
 
 [real]: https://en.wikipedia.org/wiki/Real_number
 
 [complex]: https://en.wikipedia.org/wiki/Complex_number
 
-[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma
+[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1
+[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1/tree/umd
 
-[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc
+[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc/tree/umd
 
-[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv
+[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv/tree/umd
 
-[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln
+[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln/tree/umd
 
 <!-- </related-links> -->
 
