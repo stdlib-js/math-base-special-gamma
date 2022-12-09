@@ -65,7 +65,7 @@
     "@stdlib/math-base-assert-is-odd": "^0.0.x",
     "@stdlib/math-base-special-gamma-lanczos-sum": "^0.0.x",
     "@stdlib/math-base-special-ln": "^0.0.x",
-    "@stdlib/math-base-special-max": "^0.0.x",
+    "@stdlib/math-base-special-maxn": "^0.0.x",
     "@stdlib/math-base-special-signum": "^0.0.x",
     "@stdlib/math-base-special-sinpi": "^0.0.x",
     "@stdlib/math-base-tools-evalpoly-compile": "^0.0.x",
