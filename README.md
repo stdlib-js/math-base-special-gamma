@@ -30,10 +30,14 @@ The [gamma function][gamma-function] extends the [factorial function][@stdlib/ma
 
 <!-- <equation class="equation" label="eq:gamma_function_positive_integers" align="center" raw="\Gamma ( n ) = (n-1)!" alt="Gamma function for positive integers."> -->
 
-<div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="eq:gamma_function_positive_integers">
+```math
+\Gamma ( n ) = (n-1)!
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\Gamma ( n ) = (n-1)!" data-equation="eq:gamma_function_positive_integers">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@bb29798906e119fcb2af99e94b60407a270c9b32/lib/node_modules/@stdlib/math/base/special/gamma/docs/img/equation_gamma_function_positive_integers.svg" alt="Gamma function for positive integers.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,10 +45,14 @@ Generalized to all complex numbers `z`, except for nonpositive integers, the [ga
 
 <!-- <equation class="equation" label="eq:gamma_function_infinite_product" align="center" raw="\Gamma ( z ) = \frac{e^{-\gamma z}}{z} \prod^{\infty}_{n=1} \left ( 1+\frac{z}{n}\right )^{-1} e^{z/n}" alt="Gamma function for all complex numbers."> -->
 
-<div class="equation" align="center" data-raw-text="\Gamma ( z ) = \frac{e^{-\gamma z}}{z} \prod^{\infty}_{n=1} \left ( 1+\frac{z}{n}\right )^{-1} e^{z/n}" data-equation="eq:gamma_function_infinite_product">
+```math
+\Gamma ( z ) = \frac{e^{-\gamma z}}{z} \prod^{\infty}_{n=1} \left ( 1+\frac{z}{n}\right )^{-1} e^{z/n}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\Gamma ( z ) = \frac{e^{-\gamma z}}{z} \prod^{\infty}_{n=1} \left ( 1+\frac{z}{n}\right )^{-1} e^{z/n}" data-equation="eq:gamma_function_infinite_product">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@591cf9d5c3a0cd3c1ceec961e5c49d73a68374cb/lib/node_modules/@stdlib/math/base/special/gamma/docs/img/equation_gamma_function_infinite_product.svg" alt="Gamma function for all complex numbers.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -54,14 +62,30 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-gamma
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
+var gamma = require( '@stdlib/math-base-special-gamma' );
 ```
 
 #### gamma( x )
@@ -101,14 +125,9 @@ v = gamma( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var gamma = require( '@stdlib/math-base-special-gamma' );
 
 var x = linspace( -10.0, 10.0, 100 );
 
@@ -116,10 +135,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, f(x): %d', x[ i ], gamma( x[ i ] ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -134,10 +149,10 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/gamma1pm1`][@stdlib/math/base/special/gamma1pm1]</span><span class="delimiter">: </span><span class="description">compute gamma(x+1) - 1.</span>
--   <span class="package-name">[`@stdlib/math/base/special/gammainc`][@stdlib/math/base/special/gammainc]</span><span class="delimiter">: </span><span class="description">incomplete gamma function.</span>
--   <span class="package-name">[`@stdlib/math/base/special/gammaincinv`][@stdlib/math/base/special/gammaincinv]</span><span class="delimiter">: </span><span class="description">inverse incomplete gamma function.</span>
--   <span class="package-name">[`@stdlib/math/base/special/gammaln`][@stdlib/math/base/special/gammaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the gamma function.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/gamma1pm1`][@stdlib/math/base/special/gamma1pm1]</span><span class="delimiter">: </span><span class="description">compute gamma(x+1) - 1.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/gammainc`][@stdlib/math/base/special/gammainc]</span><span class="delimiter">: </span><span class="description">incomplete gamma function.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/gammaincinv`][@stdlib/math/base/special/gammaincinv]</span><span class="delimiter">: </span><span class="description">inverse incomplete gamma function.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/gammaln`][@stdlib/math/base/special/gammaln]</span><span class="delimiter">: </span><span class="description">natural logarithm of the gamma function.</span>
 
 </section>
 
@@ -152,7 +167,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -164,7 +179,7 @@ For more information on the project, filing bug reports and feature requests, an
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -191,7 +206,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -207,23 +222,23 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 
-[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial/tree/esm
+[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial
 
 [real]: https://en.wikipedia.org/wiki/Real_number
 
 [complex]: https://en.wikipedia.org/wiki/Complex_number
 
-[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma/tree/esm
+[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1/tree/esm
+[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1
 
-[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc/tree/esm
+[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc
 
-[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv/tree/esm
+[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv
 
-[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln/tree/esm
+[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln
 
 <!-- </related-links> -->
 
