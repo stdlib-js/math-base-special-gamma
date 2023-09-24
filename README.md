@@ -80,6 +80,11 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 ## Usage
 
 ```javascript
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-gamma/tags). For example,
+
+```javascript
 import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@v0.1.0-deno/mod.js';
 ```
 
@@ -122,7 +127,7 @@ v = gamma( NaN );
 
 ```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@v0.1.0-deno/mod.js';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@deno/mod.js';
 
 var x = linspace( -10.0, 10.0, 100 );
 
