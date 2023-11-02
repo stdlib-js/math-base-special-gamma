@@ -73,14 +73,30 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-gamma
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
+var gamma = require( '@stdlib/math-base-special-gamma' );
 ```
 
 #### gamma( x )
@@ -120,14 +136,9 @@ v = gamma( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var gamma = require( '@stdlib/math-base-special-gamma' );
 
 var x = linspace( -10.0, 10.0, 100 );
 
@@ -135,10 +146,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'x: %d, f(x): %d', x[ i ], gamma( x[ i ] ) );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -171,7 +178,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -226,23 +233,23 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 
-[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial/tree/esm
+[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial
 
 [real]: https://en.wikipedia.org/wiki/Real_number
 
 [complex]: https://en.wikipedia.org/wiki/Complex_number
 
-[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma/tree/esm
+[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1/tree/esm
+[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1
 
-[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc/tree/esm
+[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc
 
-[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv/tree/esm
+[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv
 
-[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln/tree/esm
+[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln
 
 <!-- </related-links> -->
 
