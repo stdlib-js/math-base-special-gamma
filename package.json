@@ -50,7 +50,8 @@
     "@stdlib/math-base-special-exp": "^0.2.1",
     "@stdlib/math-base-special-floor": "^0.2.1",
     "@stdlib/math-base-special-pow": "^0.2.1",
-    "@stdlib/math-base-special-sin": "^0.2.1"
+    "@stdlib/math-base-special-sin": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/array-base-incrspace": "^0.2.0",
