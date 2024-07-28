@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-gamma",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Gamma function.",
   "license": "Apache-2.0",
   "author": {
@@ -51,14 +51,14 @@
     "@stdlib/math-base-assert-is-negative-zero": "^0.2.2",
     "@stdlib/math-base-napi-unary": "^0.2.3",
     "@stdlib/math-base-special-abs": "^0.2.2",
-    "@stdlib/math-base-special-exp": "^0.2.3",
+    "@stdlib/math-base-special-exp": "^0.2.4",
     "@stdlib/math-base-special-floor": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/math-base-special-sin": "^0.2.1",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-base-incrspace": "^0.2.1",
+    "@stdlib/array-base-incrspace": "^0.2.2",
     "@stdlib/array-base-linspace": "^0.2.1",
     "@stdlib/constants-float64-eps": "^0.2.2",
     "@stdlib/constants-float64-gamma-lanczos-g": "^0.2.2",
