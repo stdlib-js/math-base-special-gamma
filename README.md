@@ -220,7 +220,6 @@ double stdlib_base_gamma( const double x );
 
 ```c
 #include "stdlib/math/base/special/gamma.h"
-#include <stdlib.h>
 #include <stdio.h>
 
 int main( void ) {
