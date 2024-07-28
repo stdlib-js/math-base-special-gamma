@@ -80,7 +80,7 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 ## Usage
 
 ```javascript
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@v0.3.0-esm/index.mjs';
 ```
 
 #### gamma( x )
@@ -127,7 +127,7 @@ v = gamma( NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@v0.3.0-esm/index.mjs';
 
 var x = linspace( -10.0, 10.0, 100 );
 
