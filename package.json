@@ -54,12 +54,12 @@
     "@stdlib/math-base-special-exp": "^0.2.4",
     "@stdlib/math-base-special-floor": "^0.2.3",
     "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/math-base-special-sin": "^0.2.1",
+    "@stdlib/math-base-special-sin": "^0.3.0",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-base-incrspace": "^0.2.2",
-    "@stdlib/array-base-linspace": "^0.2.1",
+    "@stdlib/array-base-linspace": "^0.2.2",
     "@stdlib/constants-float64-eps": "^0.2.2",
     "@stdlib/constants-float64-gamma-lanczos-g": "^0.2.2",
     "@stdlib/constants-float64-max": "^0.2.2",
@@ -72,7 +72,7 @@
     "@stdlib/math-base-special-ln": "^0.2.4",
     "@stdlib/math-base-special-maxn": "^0.2.2",
     "@stdlib/math-base-special-signum": "^0.2.2",
-    "@stdlib/math-base-special-sinpi": "^0.2.1",
+    "@stdlib/math-base-special-sinpi": "^0.3.0",
     "@stdlib/math-base-tools-evalpoly-compile": "^0.3.0",
     "@stdlib/math-base-tools-evalpoly-compile-c": "^0.1.1",
     "@stdlib/math-base-tools-evalrational-compile": "^0.3.0",
