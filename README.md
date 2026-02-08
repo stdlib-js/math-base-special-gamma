@@ -80,7 +80,7 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 ## Usage
 
 ```javascript
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@deno/mod.js';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@v0.3.1-deno/mod.js';
 ```
 
 #### gamma( x )
@@ -123,7 +123,7 @@ v = gamma( NaN );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@deno/mod.js';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@v0.3.1-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
