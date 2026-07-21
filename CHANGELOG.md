@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-15)
+## Unreleased (2026-07-21)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`92c748d`](https://github.com/stdlib-js/stdlib/commit/92c748dac8ce3ad80070d5999c579a176348ea02) - **chore:** clean-up [(#13603)](https://github.com/stdlib-js/stdlib/pull/13603) _(by Philipp Burckhardt)_
 -   [`59c9969`](https://github.com/stdlib-js/stdlib/commit/59c9969a580e74428505ba91634607f110ec71bf) - **bench:** refactor to use string interpolation in `math/base/special` [(#11388)](https://github.com/stdlib-js/stdlib/pull/11388) _(by Karan Anand)_
 -   [`bd60a20`](https://github.com/stdlib-js/stdlib/commit/bd60a209ca4b0989663edbbc591bc7da80294827) - **build:** update R version to 4.2.0 in lint workflows [(#11262)](https://github.com/stdlib-js/stdlib/pull/11262) _(by Mara Averick)_
 
@@ -25,10 +26,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Karan Anand
 -   Mara Averick
+-   Philipp Burckhardt
 
 </section>
 
