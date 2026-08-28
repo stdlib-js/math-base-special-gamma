@@ -60,8 +60,8 @@
   },
   "devDependencies": {
     "@stdlib/array-base-incrspace": "^0.2.3",
+    "@stdlib/assert-is-almost-same-value": "^0.1.1",
     "@stdlib/console-log-each-map": "^0.1.1",
-    "@stdlib/constants-float64-eps": "^0.2.3",
     "@stdlib/constants-float64-gamma-lanczos-g": "^0.2.3",
     "@stdlib/constants-float64-max": "^0.2.3",
     "@stdlib/constants-float64-max-ln": "^0.2.3",
