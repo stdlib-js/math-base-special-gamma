@@ -73,32 +73,14 @@ where `γ ≈ 0.577216` is the  [Euler–Mascheroni constant][@stdlib/constants/
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-base-special-gamma
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var gamma = require( '@stdlib/math-base-special-gamma' );
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
 ```
 
 #### gamma( x )
@@ -138,10 +120,15 @@ v = gamma( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-array-uniform' );
-var logEachMap = require( '@stdlib/console-log-each-map' );
-var gamma = require( '@stdlib/math-base-special-gamma' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
+import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
+import gamma from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-gamma@esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
@@ -149,6 +136,10 @@ var opts = {
 var x = uniform( 100, -10.0, 10.0, opts );
 
 logEachMap( 'x: %0.4f, f(x): %0.4f', x, gamma );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -157,91 +148,7 @@ logEachMap( 'x: %0.4f, f(x): %0.4f', x, gamma );
 
 <!-- C interface documentation. -->
 
-* * *
 
-<section class="c">
-
-## C APIs
-
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
-
-<section class="intro">
-
-</section>
-
-<!-- /.intro -->
-
-<!-- C usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```c
-#include "stdlib/math/base/special/gamma.h"
-```
-
-#### stdlib_base_gamma( x )
-
-Evaluates the [gamma function][gamma-function].
-
-```c
-double out = stdlib_base_gamma( 4.0 );
-// returns 6.0
-
-out = stdlib_base_gamma( -1.5 );
-// returns ~2.363
-```
-
-The function accepts the following arguments:
-
--   **x**: `[in] double` input value.
-
-```c
-double stdlib_base_gamma( const double x );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- C API usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```c
-#include "stdlib/math/base/special/gamma.h"
-#include <stdio.h>
-
-int main( void ) {
-    const double x[] = { 4.0, -1.5, -0.5, 0.5 };
-
-    double y;
-    int i;
-    for ( i = 0; i < 4; i++ ) {
-        y = stdlib_base_gamma( x[ i ] );
-        printf( "gamma(%lf) = %lf\n", x[ i ], y );
-    }
-}
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -269,7 +176,7 @@ int main( void ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -327,23 +234,23 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [gamma-function]: https://en.wikipedia.org/wiki/Gamma_function
 
-[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial
+[@stdlib/math/base/special/factorial]: https://github.com/stdlib-js/math-base-special-factorial/tree/esm
 
 [real]: https://en.wikipedia.org/wiki/Real_number
 
 [complex]: https://en.wikipedia.org/wiki/Complex_number
 
-[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma
+[@stdlib/constants/float64/eulergamma]: https://github.com/stdlib-js/constants-float64-eulergamma/tree/esm
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1
+[@stdlib/math/base/special/gamma1pm1]: https://github.com/stdlib-js/math-base-special-gamma1pm1/tree/esm
 
-[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc
+[@stdlib/math/base/special/gammainc]: https://github.com/stdlib-js/math-base-special-gammainc/tree/esm
 
-[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv
+[@stdlib/math/base/special/gammaincinv]: https://github.com/stdlib-js/math-base-special-gammaincinv/tree/esm
 
-[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln
+[@stdlib/math/base/special/gammaln]: https://github.com/stdlib-js/math-base-special-gammaln/tree/esm
 
 <!-- </related-links> -->
 
